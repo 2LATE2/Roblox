@@ -1,0 +1,20 @@
+{
+  "name": "chest-open-ultra-rare-tools",
+  "version": "1.0.0",
+  "description": "Generator animacji R15 ChestOpenUltraRare: eksport .rbxmx, dane Luau i podglad 3D.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node dev/roundtrip.mjs && node dev/luacheck.mjs ../roblox/src/ChestClient.lua ../roblox/src/ChestOpeningData.lua && node dev/velocity.mjs",
+    "render": "node dev/render.mjs"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "luaparse": "^0.3.1",
+    "three": "^0.160.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "three-r147": "npm:three@0.147.0"
+  }
+}
